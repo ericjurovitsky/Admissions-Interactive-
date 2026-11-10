@@ -1,0 +1,14 @@
+{
+  "name": "excel-admissions-intelligence-private",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Authenticated CTM aggregate-only live dashboard",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check live.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

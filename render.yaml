@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: excel-admissions-private
+    runtime: docker
+    plan: starter
+    autoDeployTrigger: commit
+    envVars:
+      - key: DASHBOARD_USER
+        sync: false
+      - key: DASHBOARD_PASSWORD
+        sync: false
+      - key: CTM_API_KEY
+        sync: false
+      - key: CTM_API_SECRET
+        sync: false
+      - key: CTM_ACCOUNT_ID
+        value: "552231"
